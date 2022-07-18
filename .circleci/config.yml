@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: byrnedo/alpine-curl
     environment:
-      product: SLA
-      subProduct: SLAss
+      product: hello
+      subProduct: hello2
       environment: Production
       token: $ARMORCODE_TOKEN
       buildTool: CIRCLE_CI
@@ -15,8 +15,8 @@ jobs:
       - run:
           name: "Armorcode Validate"
           command: |
-              token=699308e1-6899-46a0-889a-fc3fb4da3139
-              wget https://preprod.armorcode.ai/static/scripts/slastatus.sh
+              token=5399947e-cfbc-4d9b-95a5-dd4e8d7a32d2
+              wget https://app.armorcode.com/static/scripts/slastatus.sh
               sh slastatus.sh
 workflows:
   armorcode-validation-workflow:
