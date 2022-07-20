@@ -5,7 +5,7 @@ jobs:
       - image: byrnedo/alpine-curl
     environment:
       product: test_pro
-      subProduct: test2
+      subProduct: testCC
       environment: Production
       token: $ARMORCODE_TOKEN
       buildTool: CIRCLE_CI
