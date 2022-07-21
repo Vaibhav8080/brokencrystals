@@ -15,8 +15,8 @@ jobs:
       - run:
           name: "Armorcode Validate"
           command: |
-              token=b332ee98-d3be-49e0-b452-fe9248084ea8
-              wget https://preprod.armorcode.ai/static/scripts/slastatus.sh
+              token=50ce4ac5-fbf1-40f1-9cde-7cb8ba054b00
+              wget https://app.armorcode.com/static/scripts/slastatus.sh
               sh slastatus.sh
 workflows:
   armorcode-validation-workflow:
